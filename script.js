@@ -49,4 +49,4 @@ document.getElementById("userinput").addEventListener("keydown", function (event
     event.preventDefault(); // Prevent form submission
     processInput();
   }
-});
+})
