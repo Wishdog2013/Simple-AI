@@ -13,9 +13,12 @@ function processInput() {
   const chatlog = document.getElementById("chatlog");
   let chatbotResponse = chatbotResponses["default"];
 
-  // Check for exact matching user input in chatbotResponses
-  if (chatbotResponses.hasOwnProperty(userInput)) {
-    chatbotResponse = chatbotResponses[userInput];
+  // Check for matching user input in chatbotResponses
+  for (const input in chatbotResponses) {
+    if (userInput === input.toLowerCase()) {
+      chatbotResponse = chatbotResponses[input];
+      break;
+    }
   }
 
   // Display user input and chatbot response in the chatlog
