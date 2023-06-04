@@ -13,9 +13,12 @@ function processInput() {
   const chatlog = document.getElementById("chatlog");
   let chatbotResponse = chatbotResponses["default"];
 
+  // Remove punctuation from user input
+  const cleanedInput = userInput.replace(/[^\w\s]/g, "");
+
   // Check for matching user input in chatbotResponses
   for (const input in chatbotResponses) {
-    if (userInput === input.toLowerCase()) {
+    if (cleanedInput === input.toLowerCase()) {
       chatbotResponse = chatbotResponses[input];
       break;
     }
