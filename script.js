@@ -9,7 +9,7 @@ const chatbotResponses = {
 
 // Function to process user input and generate chatbot response
 function processInput() {
-  const userInput = document.getElementById("userinput").value.toLowerCase().trim();
+  const userInput = document.getElementById("userinput").value.trim();
   const chatlog = document.getElementById("chatlog");
 
   // Check for empty user input
@@ -19,12 +19,10 @@ function processInput() {
 
   let chatbotResponse = chatbotResponses["default"];
 
-  // Remove non-alphanumeric characters from user input
-  const cleanedInput = userInput.replace(/\W/g, "");
-
   // Check for matching user input in chatbotResponses
   for (const input in chatbotResponses) {
-    if (cleanedInput === input.toLowerCase()) {
+    const regex = new RegExp(`\\b${input}\\b`, "i");
+    if (regex.test(userInput)) {
       chatbotResponse = chatbotResponses[input];
       break;
     }
