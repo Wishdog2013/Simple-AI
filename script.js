@@ -9,8 +9,14 @@ const chatbotResponses = {
 
 // Function to process user input and generate chatbot response
 function processInput() {
-  const userInput = document.getElementById("userinput").value.toLowerCase();
+  const userInput = document.getElementById("userinput").value.toLowerCase().trim();
   const chatlog = document.getElementById("chatlog");
+
+  // Check for empty user input
+  if (userInput === "") {
+    return;
+  }
+
   let chatbotResponse = chatbotResponses["default"];
 
   // Remove non-alphanumeric characters from user input
@@ -40,6 +46,7 @@ function processInput() {
 // Process user input when Enter key is pressed
 document.getElementById("userinput").addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
+    event.preventDefault(); // Prevent form submission
     processInput();
   }
 });
