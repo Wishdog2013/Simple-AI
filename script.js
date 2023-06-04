@@ -1,6 +1,6 @@
 // Define the chatbot responses
 const chatbotResponses = {
-  "^hi$": "Hello!",
+  "hi": "Hello!",
   "hello": "Hello! How can I assist you today?",
   "how are you": "I'm an AI, so I don't have feelings, but thank you for asking!",
   "what is your name": "I'm Simple Bot, a basic AI chatbot.",
@@ -13,13 +13,9 @@ function processInput() {
   const chatlog = document.getElementById("chatlog");
   let chatbotResponse = chatbotResponses["default"];
 
-  // Check for matching user input in chatbotResponses
-  for (const pattern in chatbotResponses) {
-    const regex = new RegExp(pattern, "i");
-    if (regex.test(userInput)) {
-      chatbotResponse = chatbotResponses[pattern];
-      break;
-    }
+  // Check for exact matching user input in chatbotResponses
+  if (chatbotResponses.hasOwnProperty(userInput)) {
+    chatbotResponse = chatbotResponses[userInput];
   }
 
   // Display user input and chatbot response in the chatlog
