@@ -7,7 +7,7 @@ const chatbotResponses = {
   "who are you made by": "I am made by Wish! He said to enjoy Simple AI :)",
   "credits": "Maintainer: Wish Code/Bug Fixes: Chat GPT (thanks OpenAI!)",
   "make a smiley emoticon": ":)",
-  "i need help!": "Oh no! Please look up your emergency number, or if your having a mental health crisis, call 988.",
+  "i need help": "Oh no! Please look up your emergency number, or if your having a mental health crisis, call 988.",
   "default": "This command has most likely not been added. If you want it added, make an issue and tag it with enhancement."
 };
 
