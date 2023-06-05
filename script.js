@@ -43,7 +43,7 @@ function processInput() {
 }
 
 // Process user input when Enter key is pressed
-document.getElementById("userinput").addEventListener("keyup", function (event) {
+document.getElementById("userinput").addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault(); // Prevent form submission
     processInput();
