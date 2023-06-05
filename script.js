@@ -11,6 +11,7 @@ const chatbotResponses = {
   "dev menu": "Dev Commands: Why are you not updating? and Thanks for helping us.",
   "Why are you not updating?": "You have to update the code with something before the previous code will appear!",
   "Thanks for helping us": "Awwww, your welcome! :) Thanks for making me",
+  "updater": "add number to updater to update",
   "default": "This command has most likely not been added. If you want it added, make an issue and tag it with enhancement."
 };
 
