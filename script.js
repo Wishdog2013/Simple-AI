@@ -4,7 +4,7 @@ const chatbotResponses = {
   "hello": "Hello! How can I assist you today?",
   "how are you": "I'm an AI, so I don't have feelings, but thank you for asking!",
   "what is your name": "I'm Simple Bot, a basic AI chatbot.",
-  "who are you made by": "I am made by Wish! He said to enjoy Simple Bot :)"
+  "who are you made by": "I am made by Wish! He said to enjoy Simple Bot :)",
   "default": "This command has most likely not been added. If you want it added, make an issue and tag it with enhancement."
 };
 
@@ -43,9 +43,9 @@ function processInput() {
 }
 
 // Process user input when Enter key is pressed
-document.getElementById("userinput").addEventListener("keydown", function (event) {
+document.getElementById("userinput").addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     event.preventDefault(); // Prevent form submission
     processInput();
   }
-})
+});
