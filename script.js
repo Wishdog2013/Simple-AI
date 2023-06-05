@@ -4,6 +4,7 @@ const chatbotResponses = {
   "hello": "Hello! How can I assist you today?",
   "how are you": "I'm an AI, so I don't have feelings, but thank you for asking!",
   "what is your name": "I'm Simple Bot, a basic AI chatbot.",
+  "what are you made by": "I am made by Wish! He said to enjoy Simple Bot :)"
   "default": "This command has most likely not been added. If you want it added, make an issue and tag it with enhancement."
 };
 
