@@ -8,6 +8,9 @@ const chatbotResponses = {
   "credits": "Maintainer: Wish Code/Bug Fixes: Chat GPT (thanks OpenAI!)",
   "make a smiley emoticon": ":)",
   "i need help": "Oh no! Please look up your emergency number, or if your having a mental health crisis, call 988.",
+  "dev menu": "Dev Commands: Why are you not updating? and Thanks for helping us.",
+  "Why are you not updating?": "You have to update the code with something before the previous code will appear!",
+  "Thanks for helping us": "Awwww, your welcome! :) Thanks for making me",
   "default": "This command has most likely not been added. If you want it added, make an issue and tag it with enhancement."
 };
 
