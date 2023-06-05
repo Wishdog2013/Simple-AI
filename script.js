@@ -1,4 +1,4 @@
-// Define the chatbot responses
+// Define the chatbot response
 const chatbotResponses = {
   "hi": "Hello!",
   "hello": "Hello! How can I assist you today?",
