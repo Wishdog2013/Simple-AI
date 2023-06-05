@@ -6,6 +6,7 @@ const chatbotResponses = {
   "what is your name": "I'm Simple AI, a basic AI chatbot.",
   "who are you made by": "I am made by Wish! He said to enjoy Simple AI :)",
   "credits": "Maintainer: Wish Code/Bug Fixes: Chat GPT (thanks OpenAI!)",
+  "make a smiley emoticon": ":)",
   "default": "This command has most likely not been added. If you want it added, make an issue and tag it with enhancement."
 };
 
