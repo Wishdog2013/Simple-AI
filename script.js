@@ -38,7 +38,7 @@ function processInput() {
   chatlog.appendChild(userMessage);
 
   const chatbotMessage = document.createElement("p");
-  chatbotMessage.innerText = "Chatbot: " + chatbotResponse;
+  chatbotMessage.innerText = "Simple AI: " + chatbotResponse;
   chatlog.appendChild(chatbotMessage);
 
   // Clear the user input field
